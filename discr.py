@@ -51,10 +51,10 @@ class MyApp(QtWidgets.QMainWindow):
             EQUATION = str(A) + r'x^2' + f'{B:+}' + r'x' + f'{C:+}' + r'=0'
 
             FORMULA1 = r'x_1 = \frac{-b + \sqrt{D}}{2a} =' \
-                       r' \frac{-{' + str(B) + '} + \sqrt{' + str(discriminant) + '}}{' + str(2 * A) + '} = ' + str(x1)
+                       r' \frac{{' + str(-B) + '} + \sqrt{' + str(discriminant) + '}}{' + str(2 * A) + '} = ' + str(x1)
 
             FORMULA2 = r'x_2 = \frac{-b - \sqrt{D}}{2a} =' \
-                       r' \frac{-{' + str(B) + '} - \sqrt{' + str(discriminant) + '}}{' + str(2 * A) + '} = ' + str(x2)
+                       r' \frac{{' + str(-B) + '} - \sqrt{' + str(discriminant) + '}}{' + str(2 * A) + '} = ' + str(x2)
 
             eqt = self.__tex2svg(EQUATION)
             c1 = self.__tex2svg(FORMULA1)
